@@ -1,0 +1,57 @@
+@import url("https://fonts.googleapis.com/css2?family=Delius&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Oswald:wght@200..700&family=Roboto+Serif:ital,opsz,wght@0,8..144,100..900;1,8..144,100..900&display=swap");
+
+/* Reset styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Global scrollbar styles */
+::-webkit-scrollbar {
+  width: 10px; /* Scrollbar width */
+  height: 20px; /* Scrollbar height */
+}
+
+::-webkit-scrollbar-track {
+  background: #f7f4ed; /* Track color */
+  /* border-radius: 100vh;  */
+}
+
+::-webkit-scrollbar-thumb {
+  background: #e0cbcb; /* Thumb color */
+  border-radius: 100vh; /* Thumb border radius */
+  border: 3px solid #f6f7ed; /* Thumb border to give padding effect */
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #c0a0b9; /* Hover color for thumb */
+}
+
+/* For Firefox (limited customization) */
+/* * {
+  scrollbar-width: thin; 
+  scrollbar-color: #e0cbcb #f7f4ed; 
+} */
+
+/* Global styles */
+body {
+  font-family: "Oswald", "Arial", sans-serif;
+  background-color: #131313;
+  color: rgb(211, 211, 211);
+}
+
+/* CSS variables */
+:root {
+  --primary-color: #007bff;
+  --secondary-color: #6c757d;
+  --font-family: "Roboto", sans-serif;
+}
+
+.active-link {
+  @apply text-primary-light;
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
